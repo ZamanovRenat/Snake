@@ -9,14 +9,14 @@ namespace Snake
     class Snake : Figure
     {
         Direction direction;
-        
+
         public Snake(Point tail, int length, Direction _direction)
         {
             direction = _direction;
             pList = new List<Point>();
             for (int i = 0; i < length; i++)
             {
-                Point p = new Point (tail);
+                Point p = new Point(tail);
                 p.Move(i, direction);
                 pList.Add(p);
             }
@@ -47,10 +47,23 @@ namespace Snake
                 direction = Direction.LEFT;
             else if (key == ConsoleKey.RightArrow)
                 direction = Direction.RIGHT;
-            else if (key == ConsoleKey.UpArrow)
-                direction = Direction.UP;
             else if (key == ConsoleKey.DownArrow)
                 direction = Direction.DOWN;
+            else if (key == ConsoleKey.UpArrow)
+                direction = Direction.UP;
+        }
+
+        internal bool Eat(Point food)
+        {
+            Point head = GetNextPoint();
+            if (head.IsHit(food))
+            {
+                food.sym = head.sym;
+                pList.Add(food);
+                return true;
+            }
+            else
+                return false;
         }
     }
 }

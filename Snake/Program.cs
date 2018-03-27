@@ -10,8 +10,6 @@ namespace Snake
     {
         static void Main(string[] args)
         {
-            //Console.SetBufferSize(80, 25);
-
             Point p1 = new Point(1,3,'*');
             p1.Draw();
             Point p2 = new Point(2,4,'#');
@@ -30,29 +28,6 @@ namespace Snake
             leftLine.Drow();
             VerticalLine reightLine = new VerticalLine(0, 24, 78, '+');
             reightLine.Drow();
-
-
-            /*List<int> numList = new List<int>();
-            numList.Add(0);
-            numList.Add(1);
-            numList.Add(2);
-
-            int x = numList[0];
-            int y = numList[1];
-            int z = numList[2];
-
-            foreach (int i in numList)
-            {
-                Console.WriteLine(i);
-            }
-
-            numList.RemoveAt(0);
-
-            List<Point> pList = new List<Point>();
-            pList.Add(p1);
-            pList.Add(p2);
-            pList.Add(p3);
-            pList.Add(p4);*/
 
             Console.ReadLine();
         }

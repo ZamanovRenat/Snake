@@ -4,3 +4,9 @@ D:\My programms\Snake\Snake\Snake\bin\Debug\Snake.exe
 D:\My programms\Snake\Snake\Snake\bin\Debug\Snake.pdb
 D:\My programms\Snake\Snake\Snake\obj\Debug\Snake.exe
 D:\My programms\Snake\Snake\Snake\obj\Debug\Snake.pdb
+D:\My programms\Snake\Snake.git\Snake\bin\Debug\Snake.exe.config
+D:\My programms\Snake\Snake.git\Snake\obj\Debug\Snake.exe
+D:\My programms\Snake\Snake.git\Snake\obj\Debug\Snake.pdb
+D:\My programms\Snake\Snake.git\Snake\bin\Debug\Snake.exe
+D:\My programms\Snake\Snake.git\Snake\bin\Debug\Snake.pdb
+D:\My programms\Snake\Snake.git\Snake\obj\Debug\Snake.csprojResolveAssemblyReference.cache
